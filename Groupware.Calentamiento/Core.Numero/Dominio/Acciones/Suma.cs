@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Management;
 
 namespace Core.Numero.Dominio.Acciones
 {
@@ -11,16 +12,27 @@ namespace Core.Numero.Dominio.Acciones
         public Numero Operar (Numero elPrimerNumero, Numero elSegundoNumero)
         {
             Numero resultado = null;
+            Numero numeroUno = null;
+            Numero numeroDos = null;
+                   
+           var validarBases = new Validaciones.ValidarBase();
 
-            var validarBases = new Validaciones.ValidarBase();
+           string PrimerNumero = validarBases.CambioBase(elPrimerNumero, elPrimerNumero.laBase);
+           string SegundoNumero = validarBases.CambioBaseSegundo(elSegundoNumero, elSegundoNumero.laBase);
 
-            if (validarBases.LasDosBasesSonIguiales(elPrimerNumero, elSegundoNumero)){
-                double elResultadoNumerico = (elPrimerNumero.elNumeroEnDecimal + elSegundoNumero.elNumeroEnDecimal);
-                //TODO: Covertir el resultado en la base 10 del punto anterior a la base de los numeros
-                //por ejemplo, originalmente, podria estar sumando "2A" + "3F" en base hexadecimal 
-                resultado = new Numero(elResultadoNumerico.ToString(), elPrimerNumero.laBase);
+            numeroUno = new Numero(PrimerNumero.ToString(),10);
+            numeroDos = new Numero(SegundoNumero.ToString(), 10);
+
+
+            if (validarBases.LasDosBasesSonIguiales(numeroUno,numeroDos)){
+                double elResultadoNumerico = Convert.ToDouble(numeroUno.elNumero)+ Convert.ToDouble(numeroDos.elNumero);
+                
+                resultado = new Numero(elResultadoNumerico.ToString(), 10);
+
             }
             return (resultado);
         }
+
+
     }
 }

@@ -11,9 +11,10 @@ namespace Tests.Calculadora
         public void UnoMasCuatro()
         {
             //definicion del escenario
-            Numero elPrimerOperando = new Numero("1", 10);
-            Numero elSegundoOperando = new Numero("4", 10);
-            Numero elResultadoEsperado = new Numero("5", 10);
+        
+            Numero elPrimerOperando = new Numero("11F11f", 16);
+            Numero elSegundoOperando = new Numero("7", 8);
+            Numero elResultadoEsperado = new Numero("1176070", 10);
             Numero elResultadoReal;
 
             //Invoque el metodo que se prueba
@@ -40,5 +41,7 @@ namespace Tests.Calculadora
             //Verificar si el resultado obtenido es el mismo que es el espereado
             Assert.AreEqual<Numero>(elResultadoEsperado, elResultadoReal);
         }
+
     }
+
 }

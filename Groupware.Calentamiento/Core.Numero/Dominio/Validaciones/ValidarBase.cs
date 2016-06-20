@@ -8,19 +8,43 @@ namespace Core.Numero.Dominio.Validaciones
 {
     public class ValidarBase
     {
-        public bool LaBaseEstaEnElIntervaloCorrecto (int laBase)
+        public bool LaBaseEstaEnElIntervaloCorrecto(int laBase)
         {
             bool resultado;
-            resultado = (2 <= laBase) & (laBase <= 16);
+            resultado = (2 <= laBase) & (laBase <= 32);
             return (resultado);
         }
 
-        public bool LasDosBasesSonIguiales (Numero elPrimerNumero, Numero elSengundoNumero)
+        public bool LasDosBasesSonIguiales(Numero elPrimerNumero, Numero elSengundoNumero)
         {
             bool resultado;
- 
+
             resultado = (elPrimerNumero.laBase == elSengundoNumero.laBase);
-            return (resultado); 
+            return (resultado);
+        }
+
+        public string CambioBase(Numero elPrimerNumero, int laBase)
+        {
+           
+            String Numero = Convert.ToString(elPrimerNumero.elNumero);
+            int Base = elPrimerNumero.laBase;
+            int ABase = 10;
+           // int res = Convert.ToInt32(Numero, Base);
+            String ResultadoPrimerNumero = Convert.ToString(Convert.ToInt32(Numero, Base), ABase);
+
+            return (ResultadoPrimerNumero);
+        }
+
+        public string CambioBaseSegundo(Numero elSegundoNumero, int laBase)
+        {
+            String Numero = Convert.ToString(elSegundoNumero.elNumero);
+            int Base = elSegundoNumero.laBase;
+            int ABase = 10;
+
+            String ResultadoSegundoNumero = Convert.ToString(Convert.ToInt32(Numero, Base), ABase);
+
+            return (ResultadoSegundoNumero);
         }
     }
 }
+

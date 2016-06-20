@@ -40,6 +40,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\Acciones\Division.cs" />
+    <Compile Include="Dominio\Acciones\Multiplicacion.cs" />
+    <Compile Include="Dominio\Acciones\Resta.cs" />
     <Compile Include="Dominio\Acciones\Suma.cs" />
     <Compile Include="Dominio\Especificaciones\RealizarCalculo.cs" />
     <Compile Include="Dominio\Validaciones\ValidarBase.cs" />
