@@ -8,11 +8,11 @@ namespace Tests.Calculadora
     public class TestsSumas
     {
         [TestMethod]
-        public void UnoMasCuatro()
+        public void SumaSinDecimales()
         {
             //definicion del escenario
         
-            Numero elPrimerOperando = new Numero("11F11f", 16);
+            Numero elPrimerOperando = new Numero("11F1FF", 16);
             Numero elSegundoOperando = new Numero("7", 8);
             Numero elResultadoEsperado = new Numero("1176070", 10);
             Numero elResultadoReal;
