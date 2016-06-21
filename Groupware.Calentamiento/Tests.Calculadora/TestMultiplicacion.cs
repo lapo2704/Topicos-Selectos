@@ -12,11 +12,27 @@ namespace Tests.Calculadora
     public class TestMultiplicacion
     {
         [TestMethod]
-        public void Multiplicacion()
+        public void MultiplicacionSinErrores()
         {
-            Numero elPrimerOperando = new Numero("1000000", 10);
-            Numero elSegundoOperando = new Numero("1000000", 10);
-            Numero elResultadoEsperado = new Numero("1000000000000", 10);
+            Numero elPrimerOperando = new Numero("R1R", 32);
+            Numero elSegundoOperando = new Numero("7", 8);
+            Numero elResultadoEsperado = new Numero("1", 10);
+            Numero elResultadoReal;
+
+            //Invoque el metodo que se prueba
+            var laReferencia = new Core.Numero.Dominio.Acciones.Multiplicacion();
+            elResultadoReal = laReferencia.OperarMultiplicacion(elPrimerOperando, elSegundoOperando);
+
+            //Verificar si el resultado obtenido es el mismo que es el espereado
+            Assert.AreEqual<Numero>(elResultadoEsperado, elResultadoReal);
+        }
+
+        [TestMethod]
+        public void MultiplicacionConDesbordamiento()
+        {
+            Numero elPrimerOperando = new Numero("2200000000", 10);
+            Numero elSegundoOperando = new Numero("2", 10);
+            Numero elResultadoEsperado = new Numero("4", 10);
             Numero elResultadoReal;
 
             //Invoque el metodo que se prueba
