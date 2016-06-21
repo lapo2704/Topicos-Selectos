@@ -51,8 +51,7 @@ namespace Core.Numero
 
             }
         }
-
-       
+              
 
         public Numero()
         {

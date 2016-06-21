@@ -13,7 +13,7 @@ namespace Tests.Calculadora
     {
 
         [TestMethod]
-        public void RestaSinDecimales()
+        public void Resta()
         {
             Numero elPrimerOperando = new Numero("11F1FF", 16);
             Numero elSegundoOperando = new Numero("1", 10);

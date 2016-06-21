@@ -24,8 +24,7 @@ namespace Core.Numero.Dominio.Validaciones
         }
 
         public string CambioBase(Numero elPrimerNumero, int laBase)
-        {
-           
+        {           
             String Numero = Convert.ToString(elPrimerNumero.elNumero);
             int Base = elPrimerNumero.laBase;
             int ABase = 10;

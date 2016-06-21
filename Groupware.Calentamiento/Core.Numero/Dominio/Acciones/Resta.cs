@@ -17,10 +17,10 @@ namespace Core.Numero.Dominio.Acciones
             var validarBases = new Validaciones.ValidarBase();
 
             string PrimerNumero = validarBases.CambioBase(elPrimerNumero, elPrimerNumero.laBase);
-           // string SegundoNumero = validarBases.CambioBaseSegundo(elSegundoNumero, elSegundoNumero.laBase);
+            string SegundoNumero = validarBases.CambioBase(elSegundoNumero, elSegundoNumero.laBase);
 
             numeroUno = new Numero(PrimerNumero.ToString(), 10);
-           // numeroDos = new Numero(SegundoNumero.ToString(), 10);
+            numeroDos = new Numero(SegundoNumero.ToString(), 10);
 
 
             if (validarBases.LasDosBasesSonIguiales(numeroUno, numeroDos))

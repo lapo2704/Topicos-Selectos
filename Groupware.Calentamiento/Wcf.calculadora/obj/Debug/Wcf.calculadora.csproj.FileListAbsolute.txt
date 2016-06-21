@@ -1,1 +1,9 @@
 C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Wcf.calculadora\obj\Debug\Wcf.calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\bin\Wcf.calculadora.dll.config
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\bin\Wcf.calculadora.dll
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\bin\Wcf.calculadora.pdb
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\bin\Core.Numero.dll
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\bin\Core.Numero.pdb
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\obj\Debug\Wcf.calculadora.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\obj\Debug\Wcf.calculadora.dll
+C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Wcf.calculadora\obj\Debug\Wcf.calculadora.pdb
