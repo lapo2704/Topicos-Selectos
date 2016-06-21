@@ -1,0 +1,8 @@
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\obj\Debug\Tests.Calculadora.csprojResolveAssemblyReference.cache
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\bin\Debug\Tests.Calculadora.dll
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\bin\Debug\Tests.Calculadora.pdb
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\bin\Debug\Core.Numero.dll
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\bin\Debug\Core.Numero.pdb
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\obj\Debug\Tests.Calculadora.dll
+C:\Users\ESCIPCION\Desktop\Topicos-Selectos-master\Groupware.Calentamiento\Tests.Calculadora\obj\Debug\Tests.Calculadora.pdb

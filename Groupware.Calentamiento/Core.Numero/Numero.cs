@@ -38,9 +38,10 @@ namespace Core.Numero
             Numero elResultado;
             var validacionBase = new Dominio.Validaciones.ValidarBase();
             var validacionNumero = new Dominio.Validaciones.ValidarNumero();
+            var validacionPorCero = new Dominio.Validaciones.ValidaDivisonPorCero();
 
             if (validacionBase.LaBaseEstaEnElIntervaloCorrecto(laBase) &
-                validacionNumero.ElNumeroEsValidoEnLaBase (elNumero, laBase))
+                validacionNumero.ElNumeroEsValidoEnLaBase (elNumero, laBase) & validacionPorCero.DivisionPorCero(elNumero))
             {
                 this.laBase = laBase;
                 this.elNumero = elNumero;
@@ -50,6 +51,8 @@ namespace Core.Numero
 
             }
         }
+
+       
 
         public Numero()
         {

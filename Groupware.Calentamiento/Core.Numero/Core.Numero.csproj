@@ -45,6 +45,7 @@
     <Compile Include="Dominio\Acciones\Resta.cs" />
     <Compile Include="Dominio\Acciones\Suma.cs" />
     <Compile Include="Dominio\Especificaciones\RealizarCalculo.cs" />
+    <Compile Include="Dominio\Validaciones\ValidaDivisonPorCero.cs" />
     <Compile Include="Dominio\Validaciones\ValidarBase.cs" />
     <Compile Include="Dominio\Validaciones\ValidarNumero.cs" />
     <Compile Include="Numero.cs" />

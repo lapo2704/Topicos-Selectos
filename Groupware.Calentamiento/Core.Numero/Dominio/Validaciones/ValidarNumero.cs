@@ -8,22 +8,41 @@ namespace Core.Numero.Dominio.Validaciones
 {
     public class ValidarNumero
     {
-        public bool ElNumeroEsValidoEnLaBase (string elNumero, int laBase)
-        {
+        Char[] arreglovalida = new Char[32] { '0','1','2','3','4','5','6','7','8','9',
+            'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R',
+            'S','T','U','V'};
+
+
+        public bool ElNumeroEsValidoEnLaBase(string elNumero, int laBase) {
             bool elResultado = true;
-            for(int i=0; (elResultado == true) & (i < elNumero.Length); i++)
-            {
-                elResultado = ElDigitoEsValidoEnLaBase(elNumero[i], laBase);
+            Char[] arreglo = elNumero.ToCharArray();
+            int i = 0;
+            while (i < arreglo.Length && (elResultado= true)) {
+
+                elResultado = compara(arreglo[i], laBase);
+                i++;
+            }            
+           
+            return elResultado;
+        }
+
+
+
+
+        public bool compara (char elNumero, int laBase)
+        {
+            bool elResultado = false;
+
+            for (int i = 0; i < 32; i++) {
+
+                if (arreglovalida[i].Equals(elNumero)&& i<laBase ) {
+                    elResultado = true;
+                    i = 32;
+                }
             }
             return (elResultado);
         }
 
-        private bool ElDigitoEsValidoEnLaBase (char elDigito, int laBase)
-        {
-            bool elResultado;
-            //TODO: Verdificarlo!
-            elResultado = true;    
-            return (elResultado);
-        }
+        
     }
 }

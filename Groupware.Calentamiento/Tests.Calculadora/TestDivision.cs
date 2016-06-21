@@ -14,7 +14,7 @@ namespace Tests.Calculadora
         [TestMethod]
         public void DivisionSinDecimales()
         {
-            Numero elPrimerOperando = new Numero("5", 10);
+            Numero elPrimerOperando = new Numero("78P", 16);
             Numero elSegundoOperando = new Numero("1", 10);
             Numero elResultadoEsperado = new Numero("5", 10);
             Numero elResultadoReal;
