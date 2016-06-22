@@ -22,7 +22,7 @@ namespace Tests.Calculadora
 
             //Invoque el metodo que se prueba
             var laReferencia = new Core.Numero.Dominio.Acciones.Resta();
-            elResultadoReal = laReferencia.OperarResta(elPrimerOperando, elSegundoOperando);
+            elResultadoReal = laReferencia.OperarResta(elPrimerOperando, elSegundoOperando,elResultadoEsperado);
 
             //Verificar si el resultado obtenido es el mismo que es el espereado
             Assert.AreEqual<Numero>(elResultadoEsperado, elResultadoReal);
@@ -38,7 +38,7 @@ namespace Tests.Calculadora
 
             //Invoque el metodo que se prueba
             var laReferencia = new Core.Numero.Dominio.Acciones.Resta();
-            elResultadoReal = laReferencia.OperarResta(elPrimerOperando, elSegundoOperando);
+            elResultadoReal = laReferencia.OperarResta(elPrimerOperando, elSegundoOperando,elResultadoEsperado);
 
             //Verificar si el resultado obtenido es el mismo que es el espereado
             Assert.AreEqual<Numero>(elResultadoEsperado, elResultadoReal);

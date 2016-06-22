@@ -10,7 +10,7 @@ namespace Core.Numero.Dominio.Acciones
     public class Suma
     {
         public Numero Operar(Numero elPrimerNumero, Numero elSegundoNumero, Numero elResultado)
-        {
+        {   
             Numero resultado = null;
             Numero resultadoFinal = null;
             var validarBases = new Validaciones.ValidarBase();
@@ -22,9 +22,8 @@ namespace Core.Numero.Dominio.Acciones
             string TercerNumero = validarBases.CambioBase10aOtras(resultado, elResultado.laBase);
             double elResultadoNumericoConvertido = Convert.ToDouble(TercerNumero);
             resultadoFinal = new Numero(elResultadoNumericoConvertido.ToString(), elResultado.laBase);
-            return (resultadoFinal);
-           
-        }
-    }
-    
+           return (resultadoFinal);
+       }
+
+    }  
 }
