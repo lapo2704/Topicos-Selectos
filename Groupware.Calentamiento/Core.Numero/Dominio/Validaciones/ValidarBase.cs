@@ -31,12 +31,15 @@ namespace Core.Numero.Dominio.Validaciones
             {
                 ResultadoPrimerNumero = CambioBase4a10(elPrimerNumero,laBase);
             }
+            else if (elPrimerNumero.laBase == 32)
+            {
+                ResultadoPrimerNumero = CambioBase32a10(elPrimerNumero, laBase);
+            }
             else
             {
                 String Numero = Convert.ToString(elPrimerNumero.elNumero);
                 int Base = elPrimerNumero.laBase;
                 int ABase = 10;
-                // int res = Convert.ToInt32(Numero, Base);
                 ResultadoPrimerNumero = Convert.ToString(Convert.ToInt32(Numero, Base), ABase);
             }
             return (ResultadoPrimerNumero);
@@ -49,15 +52,16 @@ namespace Core.Numero.Dominio.Validaciones
             {
                 ResultadoPrimerNumero = CambioBase10a4(elPrimerNumero, laBase);
             }
+            else if (elPrimerNumero.laBase == 32)
+            {
+                ResultadoPrimerNumero = CambioBase10a32(elPrimerNumero, laBase);
+            }
             else
             {
                 String Numero = Convert.ToString(elPrimerNumero.elNumero);
                 int Base = 10;
-                int ABase = laBase;
-                // int res = Convert.ToInt32(Numero, Base);
-                 ResultadoPrimerNumero = Convert.ToString(Convert.ToInt32(Numero, Base), ABase);
-
-                
+                int ABase = laBase;               
+                ResultadoPrimerNumero = Convert.ToString(Convert.ToInt32(Numero, Base), ABase);                
             }
             return (ResultadoPrimerNumero);
         }
@@ -99,6 +103,52 @@ namespace Core.Numero.Dominio.Validaciones
                 //acumulador += (int(char[i]) * 4 ^ contador);
                // elResultado = acumulador.ToString();
                 contador++;              
+            }
+            elResultado = acumulador.ToString();
+            return elResultado;
+        }
+
+        public string CambioBase10a32(Numero elPrimerNumero, int laBase)
+        {
+            var validar = new Validaciones.ValidarNumero();
+            int numero = Convert.ToInt32(elPrimerNumero.elNumero);
+            int cociente;
+            int diferencia = 0;
+            string resultados = "";
+            bool estado = true;
+
+            do           
+            {
+                cociente = (numero / 32);
+                diferencia = numero - (cociente * 32);
+                numero = cociente;
+                cociente = 0;
+                if (numero < 32)
+                    estado = false;
+                resultados = validar.CaracterValor(diferencia).ToString() + resultados;
+            } while (estado) ;
+            if (numero != 0)
+            {
+                resultados = validar.CaracterValor(numero).ToString() + resultados;
+            }           
+            return resultados;
+        }
+
+        public string CambioBase32a10(Numero elPrimerNumero, int laBase)
+        {
+            var validar= new Validaciones.ValidarNumero();
+
+            string elResultado = "";
+            int contador = 0;
+            double acumulador = 0;
+            int numeroConvertido = 0;
+
+            for (int i = elPrimerNumero.elNumero.Length - 1; i >= 0; i--)
+            {
+               char numero = elPrimerNumero.elNumero[i];
+                numeroConvertido = validar.ValorCaracter(numero); 
+                acumulador += (numeroConvertido * (Math.Pow(32, contador)));
+                contador++;
             }
             elResultado = acumulador.ToString();
             return elResultado;

@@ -25,5 +25,21 @@ namespace Core.Numero.Dominio.Acciones
            return (resultadoFinal);
        }
 
+      /*  public Numero Operar32(Numero elPrimerNumero)
+        {
+            Numero resultado = null;
+            Numero resultadoFinal = null;
+            var validarBases = new Validaciones.ValidarBase();
+
+            string PrimerNumero = validarBases.CambioBase10a32(elPrimerNumero, elPrimerNumero.laBase);
+            //string SegundoNumero = validarBases.CambioBase10(elSegundoNumero, elSegundoNumero.laBase);
+            string elResultadoNumerico = PrimerNumero /*+ Convert.ToDouble(SegundoNumero);
+            resultado = new Numero(PrimerNumero, 32);
+            string TercerNumero = validarBases.CambioBase10aOtras(resultado, elResultado.laBase);
+            double elResultadoNumericoConvertido = Convert.ToDouble(TercerNumero);
+            resultadoFinal = new Numero(elResultadoNumericoConvertido.ToString(), elResultado.laBase);
+            return (resultado);
+        }*/
+
     }  
 }

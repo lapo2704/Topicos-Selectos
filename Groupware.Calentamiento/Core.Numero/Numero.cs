@@ -47,7 +47,6 @@ namespace Core.Numero
             }
             else
             {
-
             }
         }
 
@@ -55,5 +54,6 @@ namespace Core.Numero
         {
 
         }  
+
     }
 }
