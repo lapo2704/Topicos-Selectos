@@ -22,7 +22,7 @@ namespace Wcf.calculadora
 
         // TODO: Add your service operations here
         [OperationContract]
-        Numero RealizarOperacionBinaria(char elOperador, Numero elPrimerNumero, Numero elSegundoNumero);
+        Numero RealizarOperacionBinaria(char elOperador, Numero elPrimerNumero, Numero elSegundoNumero, Numero Resultado);
     }
     
     // Use a data contract as illustrated in the sample below to add composite types to service operations.

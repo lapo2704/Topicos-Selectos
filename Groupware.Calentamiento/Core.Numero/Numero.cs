@@ -34,7 +34,6 @@ namespace Core.Numero
         public Numero(string elNumero, int laBase)
         {
             //instancia de validacion del numero
-
             Numero elResultado;
             var validacionBase = new Dominio.Validaciones.ValidarBase();
             var validacionNumero = new Dominio.Validaciones.ValidarNumero();
@@ -51,7 +50,6 @@ namespace Core.Numero
 
             }
         }
-              
 
         public Numero()
         {
