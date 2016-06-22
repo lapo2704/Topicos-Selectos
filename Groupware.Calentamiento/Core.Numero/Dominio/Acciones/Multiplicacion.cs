@@ -18,11 +18,12 @@ namespace Core.Numero.Dominio.Acciones
 
             try
             {
-                if ((Convert.ToInt32(elPrimerNumero.elNumero) > max) || (Convert.ToInt32(elSegundoNumero.elNumero) > max))
+                /*if ((Convert.ToInt32(elPrimerNumero.elNumero) > max) || (Convert.ToInt32(elSegundoNumero.elNumero) > max))
                 {
                     resultado = null;
-
-                } else {
+                }
+                else
+                {*/
                     var validarBases = new Validaciones.ValidarBase();
                     var validarNumero = new Validaciones.ValidarNumero();
 
@@ -31,23 +32,20 @@ namespace Core.Numero.Dominio.Acciones
 
                     numeroUno = new Numero(PrimerNumero.ToString(), 10);
                     numeroDos = new Numero(SegundoNumero.ToString(), 10);
-
-
+                    
                     if (validarBases.LasDosBasesSonIguiales(numeroUno, numeroDos))
                     {
                         double elResultadoNumerico = Convert.ToDouble(numeroUno.elNumero) * Convert.ToDouble(numeroDos.elNumero);
 
                         resultado = new Numero(elResultadoNumerico.ToString(), 10);
-
                     }
-
-                }
+                //}
             }
             catch (System.OverflowException e)
             {
-                Console.WriteLine("Overflow");
-            }
+                Console.WriteLine("Overflow" + e.ToString());
 
+            }
             return (resultado);
         }        
     }
