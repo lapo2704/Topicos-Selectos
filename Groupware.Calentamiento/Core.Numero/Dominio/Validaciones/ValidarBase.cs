@@ -45,7 +45,6 @@ namespace Core.Numero.Dominio.Validaciones
             return (ResultadoPrimerNumero);
         }
 
-        // Cambia de base 10 a 2,8,16
         public string CambioBase10aOtras(Numero elPrimerNumero, int laBase)
         {
             string ResultadoPrimerNumero = "";
