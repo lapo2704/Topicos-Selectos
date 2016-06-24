@@ -48,11 +48,11 @@ namespace Core.Numero.Dominio.Validaciones
         public string CambioBase10aOtras(Numero elPrimerNumero, int laBase)
         {
             string ResultadoPrimerNumero = "";
-            if (elPrimerNumero.laBase == 4)
+            if (laBase == 4)
             {
                 ResultadoPrimerNumero = CambioBase10a4(elPrimerNumero, laBase);
             }
-            else if (elPrimerNumero.laBase == 32)
+            else if (laBase == 32)
             {
                 ResultadoPrimerNumero = CambioBase10a32(elPrimerNumero, laBase);
             }

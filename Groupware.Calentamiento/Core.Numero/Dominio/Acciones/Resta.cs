@@ -19,8 +19,7 @@ namespace Core.Numero.Dominio.Acciones
             double elResultadoNumerico = Convert.ToDouble(PrimerNumero) - Convert.ToDouble(SegundoNumero);
             resultado = new Numero(elResultadoNumerico.ToString(), 10);
             string TercerNumero = validarBases.CambioBase10aOtras(resultado, elResultado.laBase);
-            double elResultadoNumericoConvertido = Convert.ToDouble(TercerNumero);
-            resultadoFinal = new Numero(elResultadoNumericoConvertido.ToString(), elResultado.laBase);
+            resultadoFinal = new Numero(TercerNumero, elResultado.laBase);
             return (resultadoFinal);
 
         }

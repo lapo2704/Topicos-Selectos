@@ -8,3 +8,8 @@ C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Core.Num
 C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.dll
 C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.pdb
 C:\Users\Roberto\Source\Repos\Topicos-Selectos3\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Source\Repos\Topicos-Selectos\Groupware.Calentamiento\Core.Numero\bin\Debug\Core.Numero.dll
+C:\Users\Roberto\Source\Repos\Topicos-Selectos\Groupware.Calentamiento\Core.Numero\bin\Debug\Core.Numero.pdb
+C:\Users\Roberto\Source\Repos\Topicos-Selectos\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.csprojResolveAssemblyReference.cache
+C:\Users\Roberto\Source\Repos\Topicos-Selectos\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.dll
+C:\Users\Roberto\Source\Repos\Topicos-Selectos\Groupware.Calentamiento\Core.Numero\obj\Debug\Core.Numero.pdb
